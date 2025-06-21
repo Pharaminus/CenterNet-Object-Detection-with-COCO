@@ -37,6 +37,9 @@ Input Image → Preprocessing → CenterNet Model → Output Decoding → Visual
    (BGR)       Tensor        Size,            Boxes +          Image
                (RGB)         Offset]          Scores           with BB
 ```
+![image.png](attachment:592cd905-6892-4470-8926-1cfec64f25af.png)
+![Workflow du Code CenterNet - visual selection](https://github.com/user-attachments/assets/6540cdfd-51bb-4dad-8eea-1fe335d6a2d5)
+
 
 ### composants algorithmiques
 
