@@ -30,14 +30,11 @@ Ce repository implémente un pipeline d'inférence complet pour la détection d'
 
 CenterNet révolutionne la détection d'objets en représentant chaque objet par son point central accompagné d'attributs de taille et de décalage. Cette approche élimine la complexité des méthodes basées sur les ancres traditionnelles.
 
-```
-Input Image → Preprocessing → CenterNet Model → Output Decoding → Visualization
-     ↓              ↓             ↓               ↓              ↓
-  Raw Image    Normalized    [Heatmap,        Bounding         Final
-   (BGR)       Tensor        Size,            Boxes +          Image
-               (RGB)         Offset]          Scores           with BB
-```
-![image.png](attachment:592cd905-6892-4470-8926-1cfec64f25af.png)
+![Workflow du Code CenterNet - visual selection (3)](https://github.com/user-attachments/assets/5974b923-ae21-4a97-aca4-e48a740381af)
+
+
+![Workflow du Code CenterNet - visual selection (1)](https://github.com/user-attachments/assets/157a1233-d438-4395-abb1-67159f74a015)
+
 ![Workflow du Code CenterNet - visual selection](https://github.com/user-attachments/assets/6540cdfd-51bb-4dad-8eea-1fe335d6a2d5)
 
 
@@ -340,4 +337,7 @@ device = 'cpu' if not torch.cuda.is_available() else 'cuda'
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+
+
 
